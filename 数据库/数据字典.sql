@@ -1,5 +1,4 @@
-USE [KStar]
-GO
+
 
 /****** Object:  Table [dbo].[PRC_ConfigDictionary]    Script Date: 2022/10/25 13:50:49 ******/
 SET ANSI_NULLS ON
@@ -11,6 +10,7 @@ GO
 CREATE TABLE [dbo].[PRC_ConfigDictionary](
 	[Id] [uniqueidentifier] NOT NULL,
 	[ParentId] [uniqueidentifier] NULL,
+	[Code] [nvarchar](500) NULL,
 	[Name] [nvarchar](500) NULL,
 	[Value] [nvarchar](500) NULL,
 	[Type] [int] NOT NULL,
